@@ -34,7 +34,7 @@ Stopwatch/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/stopwatch.git
+   git clone (https://github.com/Diwanshuu/Prodigy_WD_2.git)
    ```
 
 2. Open the project folder.
@@ -42,10 +42,6 @@ Stopwatch/
 3. Launch `index.html` in your preferred web browser.
 
 No additional software or dependencies are required.
-
-## 📸 Preview
-
-You can add a screenshot or GIF of the application here after uploading it.
 
 ## 🎯 Learning Outcomes
 
