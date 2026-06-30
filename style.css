@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: linear-gradient(
+        -45deg,
+        #141e30,
+        #442455,
+        #210f27,
+        #4a2c64,
+        #3e1d50,
+        #5f20a223
+    );
+
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.stopwatch {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background: linear-gradient(#e9d3eb,#a536ad);
+    color: white;
+}
+
+#pauseBtn {
+    background: linear-gradient(#e9d3eb,#a536ad);
+    color: white;
+}
+
+#resetBtn {
+    background: linear-gradient(#e9d3eb,#a536ad);
+    color: white;
+}
+
+#lapBtn {
+    background: linear-gradient(#e9d3eb,#a536ad);
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+.laps-section {
+    margin-top: 20px;
+}
+
+.laps-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#laps {
+    list-style: none;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+#laps li {
+    background: rgba(255, 255, 255, 0.12);
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#laps::-webkit-scrollbar {
+    width: 6px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .stopwatch {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
